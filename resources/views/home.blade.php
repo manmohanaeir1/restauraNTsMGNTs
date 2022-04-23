@@ -103,8 +103,8 @@ https://templatemo.com/tm-558-klassy-cafe
                             @endif
                             
                             </li>
-                        </ul>        
-                        <a class='menu-trigger'>
+                        </ul>          
+                        <a class='menu-trigger' style = "display: none;">
                             <span>Menu</span>
                         </a>
                         <!-- ***** Menu End ***** -->
