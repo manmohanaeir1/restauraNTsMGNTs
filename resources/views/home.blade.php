@@ -10,14 +10,10 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Klassy Cafe - Restaurant HTML Template</title>
-<!--
+    <title>Foodgasm Resteurant and Lodge</title>
+
     
-TemplateMo 558 Klassy Cafe
 
-https://templatemo.com/tm-558-klassy-cafe
-
--->
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -51,8 +47,8 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/klassy-logo.png" align="klassy cafe html template">
+                        <a href="/" class="logo">
+                            <img src="assets/images/foodgasm-logo.png" align="Foodgasm Resteurant and Lodge">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -122,7 +118,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-lg-4">
                     <div class="left-content">
                         <div class="inner-content">
-                            <h4>KlassyCafe</h4>
+                            <h4>Foodgasm Resteurant and Lodge</h4>
                             <h6>THE BEST EXPERIENCE</h6>
                             <div class="main-white-button scroll-to-section">
                                 <a href="#reservation">Make A Reservation</a>
@@ -172,7 +168,7 @@ https://templatemo.com/tm-558-klassy-cafe
                             <h6>About Us</h6>
                             <h2>We Leave A Delicious Memory For You</h2>
                         </div>
-                        <p>Klassy Cafe is one of the best <a href="https://templatemo.com/tag/restaurant" target="_blank" rel="sponsored">restaurant HTML templates</a> with Bootstrap v4.5.2 CSS framework. You can download and feel free to use this website template layout for your restaurant business. You are allowed to use this template for commercial purposes. <br><br>You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please contact us for more information.</p>
+                        <p>Foodgasm Cafe is one of the best <a href="https://templatemo.com/tag/restaurant" target="_blank" rel="sponsored">restaurant HTML templates</a> with Bootstrap v4.5.2 CSS framework. You can download and feel free to use this website template layout for your restaurant business. You are allowed to use this template for commercial purposes. <br><br>You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please contact us for more information.</p>
                         <div class="row">
                             <div class="col-4">
                                 <img src="assets/images/about-thumb-01.jpg" alt="">
@@ -230,7 +226,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <div class='card card2'>
                             <div class="price"><h6>$22</h6></div>
                             <div class='info'>
-                              <h1 class='title'>Klassy Pancake</h1>
+                              <h1 class='title'>Foodgasm Pancake</h1>
                               <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                               <div class="main-text-button">
                                   <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
@@ -242,7 +238,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <div class='card card3'>
                             <div class="price"><h6>$18</h6></div>
                             <div class='info'>
-                              <h1 class='title'>Tall Klassy Bread</h1>
+                              <h1 class='title'>Tall Foodgasm Bread</h1>
                               <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                               <div class="main-text-button">
                                   <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
@@ -266,7 +262,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <div class='card card5'>
                             <div class="price"><h6>$8.50</h6></div>
                             <div class='info'>
-                              <h1 class='title'>Klassy Cup Cake</h1>
+                              <h1 class='title'>Foodgasm Cup Cake</h1>
                               <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                               <div class="main-text-button">
                                   <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
@@ -475,7 +471,7 @@ https://templatemo.com/tm-558-klassy-cafe
             <div class="row">
                 <div class="col-lg-4 offset-lg-4 text-center">
                     <div class="section-heading">
-                        <h6>Klassy Week</h6>
+                        <h6>Foodgasm Week</h6>
                         <h2>This Week’s Special Meal Offers</h2>
                     </div>
                 </div>
@@ -751,12 +747,12 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
                 <div class="col-lg-4">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/images/white-logo.png" alt=""></a>
+                        <a href="/"><img src="assets/images/foodgasm-logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">
                     <div class="left-text-content">
-                        <p>© Copyright Klassy Cafe Co.
+                        <p>© Copyright Foodgasm Cafe Co.
                         
                         <br>Design: TemplateMo</p>
                     </div>
