@@ -16,3 +16,8 @@ Authentication {
             change => public const HOME = '/dashboard'; onto public const HOME = '/home';
 
         }
+
+day3:
+ 1. adding admin and normal user login 
+ 2. Set up admin pannel template
+  
