@@ -20,5 +20,9 @@ Authentication {
 day3:
  1. adding admin and normal user login 
  2. Set up admin pannel template
- 3. 
+ 3. making user view, controller
   
+  day 4:
+  1. create user
+  2. delete user from admin
+  3

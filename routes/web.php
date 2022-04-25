@@ -19,6 +19,8 @@ use App\Http\Controllers\AdminController;
 
 Route::get("/", [HomeController::class,"index"]);
 Route::get("/users", [AdminController::class,"users"]);
+Route::get("/deleteuser/{id}", [AdminController::class,"deleteuser"]);
+
 
 Route::get("redirects/", [HomeController::class,"redirects"]);
 
