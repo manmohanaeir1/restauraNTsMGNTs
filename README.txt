@@ -26,3 +26,7 @@ day3:
   1. create user
   2. delete user from admin
   3
+
+  day 5:
+  1.create seperate file of food  menu form home menu
+  2. create model and migration of food menu; 

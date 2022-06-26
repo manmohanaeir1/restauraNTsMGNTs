@@ -1,56 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\User;
-use App\Models\Food;
 
-class AdminController extends Controller
+class FoodCotroller extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function users()
+    public function index()
     {
-        $data=user::all();
-
-       return view("admin.users", compact("data"));
+        return view("admin.foodmenu");
     }
-
-    public function deleteuser($id)
-    {
-        $data=user::find($id);
-        $data->delete();
-        return redirect()->back();
-       
-    }
-
-    //for food menu 
-
-    public function foodmenu()
-    {
-       return view("admin.foodmenu");
-    }
-    public function upload(Request $request)
-    {
-       $data = new food;
-
-       $image = $request->image;
-       $imagename = time() .' . '. $image->getClientOriginalExtension();
-       $request->image->move('foodimage', $imagename);
-       $data->image= $imagename;
-       $data->title = $request->title;
-       $data->price = $request->price;
-       $data->description = $request->description;
-        $data->save();
-
-        return redirect()->back();
-    }
-
-    // end food menu
 
     /**
      * Show the form for creating a new resource.
@@ -117,9 +82,4 @@ class AdminController extends Controller
     {
         //
     }
-
-
-    
-
-   
 }
