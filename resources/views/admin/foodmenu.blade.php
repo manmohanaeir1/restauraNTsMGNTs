@@ -42,15 +42,18 @@
                 <th style = "padding:30px">Description</th>
                 <th style = "padding:30px">Image</th>
                 <th style = "padding:30px">Action</th>
+                <th style = "padding:30px">Action</th>
+
 
             </tr>
-            @foreach($fdata as $fdata)
+            @foreach($data as $data)
             <tr align ="center">
-                <td>{{$fdata->title}} </td>
-                <td>{{$fdata->price}}</td>
-                <td>{{$fdata->description}}</td>
-                <td> <img height ="200" width = "200" src ="/foodimage/{{$fdata->image}}" > </td>
-                <td> <a href="{{url('/deletefoodmenu',$fdata->id)}}"> Delete</a></td>
+                <td>{{$data->title}} </td>
+                <td>{{$data->price}}</td>
+                <td>{{$data->description}}</td>
+                <td> <img height ="200" width = "200" src ="/foodimage/{{$data->image}}" > </td>
+                <td> <a href="{{url('/deletefoodmenu',$data->id)}}"> Delete</a></td>
+                <td><a href="{{url('/updatefoodview',$data->id)}}">Update</a> </td>
 
             </tr>
             @endforeach

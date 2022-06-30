@@ -30,8 +30,8 @@ class AdminController extends Controller
     //delete deletefoodmenu
     public function deletefoodmenu($id)
     {
-        $fdata = food::find($id);
-        $fdata->delete();
+        $data = food::find($id);
+        $data->delete();
         return redirect()->back();
     }
     // end 
@@ -42,10 +42,20 @@ class AdminController extends Controller
 
     public function foodmenu()
     {
-        $fdata = food::all();
-       return view("admin.foodmenu", compact("fdata"));
+        $data = food::all();
+       return view("admin.foodmenu", compact("data"));
       
     }
+    
+
+    //updatefoodview
+    public function updatefoodview($id )
+    {
+        $data = food::find($id);
+        return view("admin.updatefoodview", compact("data"));
+    }
+    // end 
+
     public function upload(Request $request)
     {
        $data = new food;
@@ -63,6 +73,28 @@ class AdminController extends Controller
     }
 
     // end food menu
+
+    // for update food menu
+
+    public function update(Request $request, $id)
+    {
+        $data = food::find($id);
+
+        $image = $request->image;
+        $imagename = time() .' . '. $image->getClientOriginalExtension();
+        $request->image->move('foodimage', $imagename);
+        $data->image= $imagename;
+        $data->title = $request->title;
+        $data->price = $request->price;
+        $data->description = $request->description;
+         $data->save();
+ 
+         return redirect()->back();  
+
+
+    }
+
+    // end update food menu
 
     /**
      * Show the form for creating a new resource.
@@ -114,10 +146,10 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        //
-    }
+    // public function update(Request $request, $id)
+    // {
+    //     //
+    // }
 
     /**
      * Remove the specified resource from storage.
