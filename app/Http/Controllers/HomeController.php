@@ -19,8 +19,12 @@ class HomeController extends Controller
      */
     public function index()
     {
+
         $data  = food::all();
-       return view("home", compact("data"));
+        $user_id =Auth::id();
+        $count = cart::where('user_id', $user_id)->count();
+
+       return view("home", compact("data", "count"));
 
     }
 
@@ -85,7 +89,7 @@ class HomeController extends Controller
         $count = cart::where('user_id',$id)->count();
 
         $data = cart::where('user_id', $id)->join('food','carts.food_id', '=' , 'food.id')->get();
-        $total = $data->price * $data->quantity; 
+       // $total = $data->price * $data->quantity; 
         return view('showcart', compact("count", "data"));
         
     }

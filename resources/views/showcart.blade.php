@@ -145,7 +145,7 @@
         <td>{{$data->title}}</td>
         <td>{{$data->price}}</td>
         <td>{{$data->quantity}}</td>
-        <td>{{$total}}</td>
+        <td>{{$data->price * $data->quantity}}</td>
 
         </tr>
 
