@@ -79,9 +79,22 @@
                             </li>
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
                             <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li> 
+                            <li class="scroll-to-section"><a href="#reservation">
+                                
+                                @auth
+                                Cart[{{$count}}]
+                                @endauth
+
+                                @guest
+
+                                Cart[0]
+
+                                @endguest
+
+                            </a></li> 
 
                             <li>
-                            @if (Route::has('login'))
+                            @if(Route::has('login'))
                                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                                     @auth
                                     <li><x-app-layout>

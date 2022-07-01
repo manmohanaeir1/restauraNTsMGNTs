@@ -37,6 +37,9 @@ Route::post("/update/{id}", [AdminController::class,"update"]);
 Route::post("/reservation/", [AdminController::class,"reservation"]);
 Route::get("/viewreservation/", [AdminController::class,"viewreservation"]);
 
+Route::post("/addcart/{id}", [HomeController::class,"addcart"]);
+
+
 
 
 
