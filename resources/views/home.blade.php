@@ -211,7 +211,8 @@
     </section>
     <!-- ***** About Area Ends ***** -->
 
-   @include("food")
+   <!-- @include("food") -->
+   @yield('food')
 
     <!-- ***** Chefs Area Starts ***** -->
     <section class="section" id="chefs">

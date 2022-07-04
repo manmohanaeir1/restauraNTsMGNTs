@@ -1,3 +1,4 @@
+@section('food')
  <!-- ***** Menu Area Starts ***** -->
  <section class="section" id="menu">
         <div class="container">
@@ -42,3 +43,4 @@
         </div>
     </section>
     <!-- ***** Menu Area Ends ***** -->
+    @endsection
