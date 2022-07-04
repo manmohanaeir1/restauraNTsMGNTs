@@ -39,6 +39,8 @@ Route::get("/viewreservation/", [AdminController::class,"viewreservation"]);
 
 Route::post("/addcart/{id}", [HomeController::class,"addcart"]);
 Route::get("/showcart/{id}", [HomeController::class,"showcart"]);
+Route::get("/remove/{id}", [HomeController::class,"removecart"]);
+
 
 
 

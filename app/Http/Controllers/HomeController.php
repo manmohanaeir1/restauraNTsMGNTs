@@ -41,7 +41,7 @@ class HomeController extends Controller
       }else{
 
         $user_id =Auth::id();
-        
+         
         $count = cart::where('user_id', $user_id)->count();
 
           return view('home', compact("data", "count"));  
@@ -88,12 +88,27 @@ class HomeController extends Controller
     {
         $count = cart::where('user_id',$id)->count();
 
+
+        $rmvdata = cart::select('*')->where('user_id', '=', $id)->get();  // for remove cart
+
         $data = cart::where('user_id', $id)->join('food','carts.food_id', '=' , 'food.id')->get();
        // $total = $data->price * $data->quantity; 
-        return view('showcart', compact("count", "data"));
+        return view('showcart', compact("count", "data","rmvdata"));
         
     }
     //end showcart
+
+      //removecart
+
+      public function removecart($id)
+      {
+        $data = cart::find($id);
+        $data->delete();
+
+        return redirect()->back();
+      }
+
+
 
     /**
      * Show the form for creating a new resource.

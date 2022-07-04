@@ -135,6 +135,9 @@
             <th style="padding:30px;">Price</th>
             <th style="padding:30px;">Quantity</th>
             <th style="padding:30px;">Total</th>
+            <th style="padding:30px;">Action</th>
+
+
 
         </tr>
 
@@ -152,6 +155,8 @@
         
 
         @endforeach
+
+
         <tr align ="center">
         <th style="padding:30px;">Grand total</th>
         </tr>
@@ -160,6 +165,19 @@
         <tr>
             <td></td>
         </tr>
+        @endforeach
+
+
+        @foreach($rmvdata as $rmvdata)
+
+        <tr style="position:relative; top: -175px; right:-470px;">
+        
+        <td>
+             <a href= "{{url('/remove',$rmvdata->id)}}" class= "btn btn-danger">  Remove </a>
+        </td>
+        </tr>
+
+
         @endforeach
 
 
